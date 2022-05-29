@@ -1,4 +1,5 @@
 # Flood-It Solver
+<img src="./docs/flood-it-ilustration.png" alt="FloodIt Puzzle" width="200"/>
 
 Create a solver for this FloodIt puzzle.
 
@@ -10,3 +11,28 @@ https://hokama.com.br/disciplinas/cic111_2022s1/trabalho01/online.html?sz=6&nc=6
 ## Project Description
 
 [Detailed project description file](docs/trabalho01.pdf).
+
+## Install and Execute
+
+The pré requisite for the installation is a debian like envirioment, and install the GCC compiler. For gcc you can install with:
+```sh
+sudo apt install build-essential
+```
+If you have make installed, just run in src folder the following command:
+```sh
+cd src
+make
+```
+Alternativily, you can execute with gcc command:
+```sh
+gcc *.c -Wall -pedantic-errors -o programa
+```
+And run the programan with:
+```sh
+echo ../casos-testes/entradas/entrada01.txt ../output/saida01heur.txt | ./programa 
+```
+
+## Test Cases
+There are examples in casos-testes directory. The entradas folder has the input files that will be readed by program, and in imagens-ilustrativas folder has the images represent the respective imput file, like the following image:
+
+![Test Cases](./casos-testes/imagens-ilustrativas/entrada01.png).
